@@ -147,8 +147,8 @@
                 try {
                     const [productResponse, productsResponse] =
                         await Promise.all([
-                            fetch(`http://192.168.123.14:3000/products/${id}`),
-                            fetch("http://192.168.123.14:3000/products?limit=100")
+                            fetch(`https://my-marketplace-api.onrender.com/products/${id}`),
+                            fetch("https://my-marketplace-api.onrender.com/products?limit=100")
                         ]);
 
                     const productData = await productResponse.json();
@@ -185,7 +185,7 @@
 
             return image.startsWith("http")
                 ? image
-                : `http://192.168.123.14:3000${image}`;
+                : `https://my-marketplace-api.onrender.com${image}`;
         };
 
         const translateCondition = (condition) => {

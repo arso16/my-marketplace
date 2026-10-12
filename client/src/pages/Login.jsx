@@ -120,7 +120,7 @@ function Login() {
 
         try {
             const response = await fetch(
-                "http://192.168.123.14:3000/users/login",
+                "https://my-marketplace-api.onrender.com/users/login",
                 {
                     method: "POST",
                     headers: {

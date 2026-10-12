@@ -137,7 +137,7 @@ function Register() {
 
         try {
             const response = await fetch(
-                "http://192.168.123.14:3000/users/register",
+                "https://my-marketplace-api.onrender.com/users/register",
                 {
                     method: "POST",
                     headers: {
@@ -175,7 +175,7 @@ function Register() {
 
         try {
             const response = await fetch(
-                "http://192.168.123.14:3000/users/verify-email",
+                "https://my-marketplace-api.onrender.com/users/verify-email",
                 {
                     method: "POST",
                     headers: {

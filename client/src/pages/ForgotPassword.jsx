@@ -57,7 +57,7 @@ function ForgotPassword() {
 
         try {
             const response = await fetch(
-                "http://192.168.123.14:3000/users/forgot-password",
+                "https://my-marketplace-api.onrender.com/users/forgot-password",
                 {
                     method: "POST",
                     headers: {

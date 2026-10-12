@@ -178,7 +178,7 @@ function CreateProduct() {
                 formData.append("image", imageUrl.trim());
             }
 
-            const response = await fetch("http://192.168.123.14:3000/products", {
+            const response = await fetch("https://my-marketplace-api.onrender.com/products", {
                 method: "POST",
                 headers: {
                     Authorization: `Bearer ${token}`

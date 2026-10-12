@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useLanguage } from "../LanguageContext";
 import "./AdminDashboard.css";
 
-const API_URL = "http://192.168.123.14:3000";
+const API_URL = "https://my-marketplace-api.onrender.com";
 
 const currencies = {
     AMD: "֏",

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, Link, useSearchParams } from "react-router-dom";
 import "./NavBar.css";
 
-const API = "http://192.168.123.14:3000";
+const API = "https://my-marketplace-api.onrender.com";
 
 const navbarTranslations = {
     en: {

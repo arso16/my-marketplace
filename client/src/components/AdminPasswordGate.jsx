@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Navigate } from "react-router-dom";
 
-const API_URL = "http://192.168.123.14:3000";
+const API_URL = "https://my-marketplace-api.onrender.com";
 const ACCESS_KEY = "adminPageUnlocked";
 
 function AdminPasswordGate({ children }) {

@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import "./Messages.css";
 
-const API = "http://192.168.123.14:3000";
+const API = "https://my-marketplace-api.onrender.com";
 
 function getTokenPayload(token) {
     try {

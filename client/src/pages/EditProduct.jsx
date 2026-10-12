@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useLanguage } from "../LanguageContext";
 import "./EditProduct.css";
 
-const API = "http://192.168.123.14:3000";
+const API = "https://my-marketplace-api.onrender.com";
 
 const translations = {
     en: {

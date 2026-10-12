@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 import "./SellerProfile.css";
 
-const API_URL = "http://192.168.123.14:3000";
+const API_URL = "https://my-marketplace-api.onrender.com";
 
 function SellerProfile() {
     const { id } = useParams();

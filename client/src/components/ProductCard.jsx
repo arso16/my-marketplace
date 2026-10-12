@@ -164,7 +164,7 @@ function ProductCard({ product }) {
         const loadFavorites = async () => {
             try {
                 const response = await fetch(
-                    "http://192.168.123.14:3000/users/favorites",
+                    "https://my-marketplace-api.onrender.com/users/favorites",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -210,7 +210,7 @@ function ProductCard({ product }) {
 
         try {
             const response = await fetch(
-                `http://192.168.123.14:3000/users/favorites/${product._id}`,
+                `https://my-marketplace-api.onrender.com/users/favorites/${product._id}`,
                 {
                     method: isFavorite ? "DELETE" : "POST",
                     headers: {
@@ -240,7 +240,7 @@ function ProductCard({ product }) {
 
         try {
             const response = await fetch(
-                `http://192.168.123.14:3000/products/${product._id}`,
+                `https://my-marketplace-api.onrender.com/products/${product._id}`,
                 {
                     method: "DELETE",
                     headers: {
@@ -274,8 +274,8 @@ function ProductCard({ product }) {
 
     const imageUrl = product.image
     ? product.image.startsWith("http")
-        ? product.image.replace("http://localhost:3000", "http://192.168.123.14:3000")
-        : `http://192.168.123.14:3000${product.image}`
+        ? product.image
+        : `https://my-marketplace-api.onrender.com${product.image.startsWith("/") ? "" : "/"}${product.image}`
     : null;
 
     const categoryKey = String(product.category || "").trim().toLowerCase();

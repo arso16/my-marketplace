@@ -181,7 +181,7 @@ function CategoryPage() {
                 setError("");
 
                 const response = await fetch(
-                    "http://192.168.123.14:3000/products?limit=100"
+                    "https://my-marketplace-api.onrender.com/products?limit=100"
                 );
 
                 if (!response.ok) {

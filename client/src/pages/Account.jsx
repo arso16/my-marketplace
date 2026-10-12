@@ -266,9 +266,9 @@ function Account() {
 
                 const [userResponse, productsResponse, favoritesResponse] =
                     await Promise.all([
-                        fetch("http://192.168.123.14:3000/users/me", { headers }),
-                        fetch("http://192.168.123.14:3000/products?limit=100"),
-                        fetch("http://192.168.123.14:3000/users/favorites", { headers })
+                        fetch("https://my-marketplace-api.onrender.com/users/me", { headers }),
+                        fetch("https://my-marketplace-api.onrender.com/products?limit=100"),
+                        fetch("https://my-marketplace-api.onrender.com/users/favorites", { headers })
                     ]);
 
                 if (userResponse.ok) {
@@ -415,7 +415,7 @@ function Account() {
 
         try {
             const response = await fetch(
-                "http://192.168.123.14:3000/users/seller/contact",
+                "https://my-marketplace-api.onrender.com/users/seller/contact",
                 {
                     method: "PUT",
                     headers: {
@@ -461,7 +461,7 @@ function Account() {
 
         try {
             const response = await fetch(
-                `http://192.168.123.14:3000/products/${productId}`,
+                `https://my-marketplace-api.onrender.com/products/${productId}`,
                 {
                     method: "DELETE",
                     headers: {
@@ -492,7 +492,7 @@ function Account() {
     const handleRemoveFavorite = async (productId) => {
         try {
             const response = await fetch(
-                `http://192.168.123.14:3000/users/favorites/${productId}`,
+                `https://my-marketplace-api.onrender.com/users/favorites/${productId}`,
                 {
                     method: "DELETE",
                     headers: {
@@ -520,7 +520,7 @@ function Account() {
 
         return product.image.startsWith("http")
             ? product.image
-            : `http://192.168.123.14:3000${product.image}`;
+            : `https://my-marketplace-api.onrender.com${product.image}`;
     };
 
     const formatPrice = (product) => {

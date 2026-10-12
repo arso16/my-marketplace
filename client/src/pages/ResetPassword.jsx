@@ -88,7 +88,7 @@ function ResetPassword() {
 
         try {
             const response = await fetch(
-                `http://192.168.123.14:3000/users/reset-password/${encodeURIComponent(token)}`,
+                `https://my-marketplace-api.onrender.com/users/reset-password/${encodeURIComponent(token)}`,
                 {
                     method: "POST",
                     headers: {
