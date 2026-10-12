@@ -1,0 +1,121 @@
+.edit-product-page {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.edit-product-box {
+    width: 100%;
+    max-width: 550px;
+    padding: 35px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: white;
+    box-sizing: border-box;
+}
+
+.edit-product-box h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.edit-product-subtitle {
+    text-align: center;
+    color: #666;
+    margin: 10px 0 30px;
+}
+
+.edit-product-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit-product-box label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.edit-product-box input,
+.edit-product-box textarea,
+.edit-product-box select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.edit-product-box textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.edit-product-box input:focus,
+.edit-product-box textarea:focus,
+.edit-product-box select:focus {
+    outline: none;
+    border-color: #555;
+}
+
+/* PRODUCT IMAGE */
+
+.edit-product-image {
+    display: block;
+    width: 100%;
+    height: 300px !important;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+/* BUTTON */
+
+.edit-product-box button {
+    margin-top: 15px;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.edit-product-box button:hover {
+    opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+    .edit-product-page {
+        padding: 25px 15px;
+        align-items: flex-start;
+    }
+
+    .edit-product-box {
+        padding: 25px 20px;
+    }
+
+    .edit-product-box h1 {
+        font-size: 26px;
+    }
+
+    .edit-product-box input,
+    .edit-product-box textarea,
+    .edit-product-box select,
+    .edit-product-box button {
+        font-size: 15px;
+    }
+
+    .edit-product-image {
+        height: 260px !important;
+    }
+}

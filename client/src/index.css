@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #f3f4f6;
+    color: #1f2937;
+    font-family: Arial, sans-serif;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+
+.app-content {
+    padding-top: 100px;
+}
+
+@media (max-width: 1200px) {
+    .app-content {
+        padding-top: 150px;
+    }
+}
+
+@media (max-width: 900px) {
+    .app-content {
+        padding-top: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-content {
+        padding-top: 77px;
+    }
+}

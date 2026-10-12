@@ -1,0 +1,715 @@
+.account-page {
+    min-height: 80vh;
+    padding: 40px 25px;
+}
+
+.account-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.account-container>h1 {
+    margin: 0 0 30px;
+    color: #1f2937;
+    font-size: 32px;
+}
+
+.account-section {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.section-header h2,
+.account-section>h2 {
+    margin: 0;
+    color: #1f2937;
+}
+
+
+
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+.profile-avatar {
+    width: 88px;
+    height: 88px;
+    flex-shrink: 0;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid #e5e7eb;
+    background: #f3f4f6;
+}
+
+.profile-info h3 {
+    margin: 0 0 5px;
+    font-size: 20px;
+}
+
+.profile-info p {
+    margin: 0;
+    color: #666;
+}
+
+
+
+.edit-profile-button,
+.sell-button {
+    border: none;
+    padding: 9px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+
+.edit-profile-button {
+    background: #2563eb;
+}
+
+.edit-profile-button:hover {
+    background: #1d4ed8;
+}
+
+.sell-button {
+    background: #16a34a;
+}
+
+.sell-button:hover {
+    background: #15803d;
+}
+
+
+.account-products {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.account-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    padding: 15px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.account-product-main {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 0;
+    cursor: pointer;
+}
+
+.account-product-main img,
+.account-no-image {
+    width: 100px;
+    height: 80px;
+
+    border-radius: 8px;
+    object-fit: cover;
+
+    background: #f3f4f6;
+}
+
+.account-no-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #777;
+    font-size: 13px;
+}
+
+.account-product-info {
+    min-width: 0;
+}
+
+.account-product-info h3 {
+    margin: 0 0 7px;
+    color: #1f2937;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.account-product-info p {
+    margin: 4px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.account-product-info .account-price {
+    color: #2563eb;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.account-product-actions {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.account-product-actions button {
+    border: none;
+    padding: 9px 15px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.account-edit-button {
+    background: #2563eb;
+}
+
+.account-edit-button:hover {
+    background: #1d4ed8;
+}
+
+.account-delete-button {
+    background: #ef4444;
+}
+
+.account-delete-button:hover {
+    background: #dc2626;
+}
+
+
+
+.empty-products {
+    text-align: center;
+    padding: 35px 20px;
+    color: #666;
+}
+
+.empty-products h3 {
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+
+.empty-products p {
+    margin-bottom: 20px;
+}
+
+.empty-products button {
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.account-settings {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.account-settings button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #1f2937;
+    color: white;
+    cursor: pointer;
+}
+
+.account-settings button:hover {
+    background: #374151;
+}
+
+.account-settings .settings-logout {
+    background: #ef4444;
+}
+
+.account-settings .settings-logout:hover {
+    background: #dc2626;
+}
+
+
+.seller-contact-section {
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #ffffff, #f8fafc);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+.seller-contact-hint {
+    max-width: 650px;
+    margin: 0 0 24px;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.seller-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+}
+
+.seller-contact-form label {
+    margin-top: 10px;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.seller-contact-form input {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    padding: 13px 15px;
+    border: 1px solid #dbe2ea;
+    border-radius: 10px;
+    background: #fff;
+    color: #0f172a;
+    font: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.seller-contact-form input::placeholder {
+    color: #94a3b8;
+}
+
+.seller-contact-form input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+}
+
+.seller-contact-form .seller-save-button {
+    margin-top: 12px;
+    min-height: 46px;
+}
+
+.seller-contact-form button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    transform: none;
+}
+
+.seller-contact-message,
+.contacts-done-message {
+    margin: 12px 0 0;
+    padding: 13px 15px;
+    border-radius: 10px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.seller-contact-message.success,
+.contacts-done-message {
+    color: #166534;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+}
+
+.seller-contact-message.error {
+    color: #991b1b;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+}
+
+.seller-public-profile-button {
+    width: auto;
+    max-width: 100%;
+    margin-top: 18px;
+    padding: 12px 18px;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.seller-public-profile-button:hover {
+    background: #dbeafe;
+    transform: translateY(-1px);
+}
+
+.more-contacts-prompt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 650px;
+    margin-top: 22px;
+    padding: 24px;
+    border: 1px solid #bfdbfe;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #eff6ff, #f8fbff);
+    animation: contactPromptIn 0.25s ease-out;
+}
+
+.contact-prompt-icon {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    background: #dcfce7;
+    color: #15803d;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.more-contacts-prompt h3 {
+    margin: 0 0 8px;
+    color: #1e3a8a;
+    font-size: 20px;
+}
+
+.more-contacts-prompt p {
+    margin: 0;
+    color: #475569;
+    line-height: 1.65;
+}
+
+.more-contacts-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.more-contacts-actions button {
+    flex: 1;
+    min-height: 44px;
+    min-width: 150px;
+    padding: 12px 16px;
+    border: 1px solid #2563eb;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.more-contacts-actions button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.more-contacts-actions button:last-child {
+    border-color: #cbd5e1;
+    background: #fff;
+    color: #334155;
+}
+
+.more-contacts-actions button:last-child:hover {
+    background: #f1f5f9;
+}
+
+
+.switch-accounts-section > p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.account-switch-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.account-switch-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.account-switch-details {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.account-switch-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.account-switch-details strong {
+    display: block;
+    overflow-wrap: anywhere;
+    color: #111827;
+}
+
+.account-switch-details p {
+    margin: 5px 0;
+    overflow-wrap: anywhere;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.account-switch-details small {
+    color: #15803d;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.account-switch-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.account-switch-actions button,
+.account-switch-bottom-actions button {
+    min-height: 38px;
+    padding: 9px 13px;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.account-switch-button,
+.account-add-button {
+    background: #2563eb;
+    color: #fff;
+}
+
+.account-switch-button:hover,
+.account-add-button:hover {
+    background: #1d4ed8;
+}
+
+.account-switch-actions .account-remove-button {
+    border: 1px solid #fecaca;
+    background: #fff;
+    color: #b91c1c;
+}
+
+.account-switch-actions .account-remove-button:hover {
+    background: #fef2f2;
+}
+
+.account-switch-bottom-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.account-logout-all-button {
+    border: 1px solid #cbd5e1 !important;
+    background: #fff;
+    color: #334155;
+}
+
+.account-switch-message {
+    margin-top: 12px;
+    color: #15803d;
+}
+
+.account-switch-actions button:focus-visible,
+.account-switch-bottom-actions button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    .account-switch-item {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .account-switch-actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .account-switch-actions button {
+        width: 100%;
+    }
+
+    .account-switch-bottom-actions {
+        flex-direction: column;
+    }
+
+    .account-switch-bottom-actions button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 360px) {
+    .account-switch-actions {
+        grid-template-columns: 1fr;
+    }
+}
+
+@keyframes contactPromptIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .seller-contact-section {
+        padding: 19px;
+        border-radius: 14px;
+    }
+
+    .seller-contact-form,
+    .seller-contact-form .seller-save-button {
+        width: 100%;
+    }
+
+    .seller-public-profile-button {
+        width: 100%;
+    }
+
+    .more-contacts-prompt {
+        padding: 19px;
+    }
+
+    .more-contacts-actions {
+        flex-direction: column;
+    }
+
+    .more-contacts-actions button {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .more-contacts-prompt {
+        animation: none;
+    }
+
+    .seller-contact-form input,
+    .seller-contact-form button,
+    .seller-public-profile-button,
+    .more-contacts-actions button {
+        transition: none;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .account-page {
+        padding: 25px 12px;
+    }
+
+    .account-section {
+        padding: 18px;
+    }
+
+    .section-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .account-product {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .account-product-main {
+        width: 100%;
+    }
+
+    .account-product-actions {
+        width: 100%;
+    }
+
+    .account-product-actions button {
+        flex: 1;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .profile-avatar {
+        width: 72px;
+        height: 72px;
+    }
+
+
+    .account-container>h1 {
+        font-size: 27px;
+    }
+
+    .account-product-main img,
+    .account-no-image {
+        width: 80px;
+        height: 70px;
+    }
+
+    .account-product-info h3 {
+        font-size: 16px;
+    }
+
+    .account-product-info .account-price {
+        font-size: 16px;
+    }
+
+    .account-settings {
+        flex-direction: column;
+    }
+
+    .account-settings button {
+        width: 100%;
+    }
+}

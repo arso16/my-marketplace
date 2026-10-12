@@ -1,0 +1,68 @@
+
+const translations = {
+    en: {
+        home: "Home",
+        register: "Register",
+        sell: "Sell",
+        account: "My Account",
+        logout: "Logout",
+        categories: "Categories",
+        search: "Search products...",
+        discoverProducts: "Discover Products",
+        loadingProducts: "Loading products...",
+        noProducts: "No products available yet.",
+        searchResults: "Search Results",
+        noSearchResults: "No products found.",
+        findWhatYouLove: "Find What You Love",
+        discoverAmazingProducts: "Discover amazing products and find your next favorite thing.",
+        exploreProducts: "Explore Products",
+        everythingInOnePlace: "Everything in One Place",
+        exploreCategories: "Explore Categories",
+        buySmart: "Buy Smart. Sell Easily.",
+        startSelling: "Start Selling"
+    },
+    hy: {
+        home: "Գլխավոր",
+        register: "Գրանցվել",
+        sell: "Վաճառել",
+        account: "Իմ հաշիվը",
+        logout: "Դուրս գալ",
+        categories: "Կատեգորիաներ",
+        search: "Փնտրել ապրանքներ...",
+        discoverProducts: "Բացահայտեք ապրանքները",
+        loadingProducts: "Ապրանքները բեռնվում են...",
+        noProducts: "Դեռ ապրանքներ չկան։",
+        searchResults: "Որոնման արդյունքներ",
+        noSearchResults: "Ապրանքներ չեն գտնվել։",
+        findWhatYouLove: "Գտեք այն, ինչ սիրում եք",
+        discoverAmazingProducts: "Բացահայտեք հետաքրքիր ապրանքներ և գտեք ձեր հաջորդ սիրելի իրը։",
+        exploreProducts: "Դիտել ապրանքները",
+        everythingInOnePlace: "Ամեն ինչ մեկ վայրում",
+        exploreCategories: "Դիտել կատեգորիաները",
+        buySmart: "Գնեք խելամիտ։ Վաճառեք հեշտությամբ։",
+        startSelling: "Սկսել վաճառքը"
+    },
+    ru: {
+        home: "Главная",
+        register: "Регистрация",
+        sell: "Продать",
+        account: "Мой аккаунт",
+        logout: "Выйти",
+        categories: "Категории",
+        search: "Поиск товаров...",
+        discoverProducts: "Откройте для себя товары",
+        loadingProducts: "Загрузка товаров...",
+        noProducts: "Пока нет товаров.",
+        searchResults: "Результаты поиска",
+        noSearchResults: "Товары не найдены.",
+        findWhatYouLove: "Найдите то, что вам нравится",
+        discoverAmazingProducts: "Открывайте интересные товары и находите новые любимые вещи.",
+        exploreProducts: "Посмотреть товары",
+        everythingInOnePlace: "Всё в одном месте",
+        exploreCategories: "Посмотреть категории",
+        buySmart: "Покупайте с умом. Продавайте легко.",
+        startSelling: "Начать продавать"
+    }
+};
+
+export default translations;

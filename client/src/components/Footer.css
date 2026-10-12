@@ -1,0 +1,128 @@
+
+.footer {
+    width: 100%;
+    margin-top: 60px;
+    background: #111827;
+    color: #d1d5db;
+}
+
+.footer-container {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    padding: 48px 24px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 36px;
+}
+
+.footer-brand,
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    margin-bottom: 14px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.footer-brand p,
+.footer-contact p {
+    max-width: 300px;
+    margin: 0 0 14px;
+    color: #9ca3af;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    margin: 0 0 18px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.footer-links a,
+.footer-contact a {
+    margin-bottom: 12px;
+    color: #9ca3af;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #60a5fa;
+}
+
+.footer-bottom {
+    padding: 20px 16px;
+    border-top: 1px solid #374151;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #9ca3af;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 32px 24px;
+        padding: 36px 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        margin-top: 36px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px 16px;
+        padding: 30px 18px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-logo {
+        font-size: 22px;
+    }
+
+    .footer-brand p,
+    .footer-contact p {
+        font-size: 13px;
+    }
+
+    .footer-links h3,
+    .footer-contact h3 {
+        font-size: 15px;
+    }
+
+    .footer-links a,
+    .footer-contact a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 340px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+}

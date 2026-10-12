@@ -1,0 +1,104 @@
+.create-product-page {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.create-product-box {
+    width: 100%;
+    max-width: 550px;
+    padding: 35px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: white;
+    box-sizing: border-box;
+}
+
+.create-product-box h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.create-product-subtitle {
+    text-align: center;
+    color: #666;
+    margin: 10px 0 30px;
+}
+
+.create-product-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.create-product-box label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.create-product-box input,
+.create-product-box textarea,
+.create-product-box select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.create-product-box textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.create-product-box input:focus,
+.create-product-box textarea:focus,
+.create-product-box select:focus {
+    outline: none;
+    border-color: #555;
+}
+
+.create-product-box button {
+    margin-top: 15px;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.create-product-box button:hover {
+    opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+    .create-product-page {
+        padding: 25px 15px;
+        align-items: flex-start;
+    }
+
+    .create-product-box {
+        padding: 25px 20px;
+    }
+
+    .create-product-box h1 {
+        font-size: 26px;
+    }
+
+    .create-product-box input,
+    .create-product-box textarea,
+    .create-product-box select,
+    .create-product-box button {
+        font-size: 15px;
+    }
+}
