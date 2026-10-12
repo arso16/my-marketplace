@@ -29,13 +29,11 @@ app.use("/users", userRoutes);
 app.use("/messages", messageRoutes);
 
 mongoose.connect(process.env.MONGO_URI)
-    .then(() => {
-        console.log("MongoDB connected");
-    })
-    .catch((err) => {
-        console.log("MongoDB connection error:", err);
-    });
+    .then(() => console.log("Connected to MongoDB Atlas"))
+    .catch((err) => console.log("MongoDB connection error:", err));
 
-app.listen(3000, () => {
-    console.log("server is running on port 3000");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log(`server is running on port ${PORT}`);
 });
