@@ -78,6 +78,8 @@ const registerUser = async (req, res) => {
                 text: `Your verification code is ${verificationCode}. It expires in 10 minutes.`
             });
         } catch (emailError) {
+            console.error("Verification email failed:", emailError.message);
+            
             await User.findByIdAndDelete(user._id);
 
             return res.status(502).json({
@@ -413,7 +415,7 @@ const resetPassword = async (req, res) => {
 
 const getMe = async (req, res) => {
     try {
-        const user = await User.findById(req.userId).select("name email gender profilePicture phoneNumber instagram facebook")  
+        const user = await User.findById(req.userId).select("name email gender profilePicture phoneNumber instagram facebook")
 
         if (!user) {
             return res.status(404).json({
